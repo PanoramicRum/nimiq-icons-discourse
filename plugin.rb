@@ -1,8 +1,8 @@
-# name: discourse-spoiler-alert
-# about: Uses the Spoiler Alert plugin to blur text when spoiling it.
-# version: 0.4
-# authors: Robin Ward, Regis Hanol
-# url: https://github.com/discourse/discourse-spoiler-alert
+# name: nimiq-icons-discourse
+# about: Loads Nimiq icons.
+# version: 0.1
+# authors: Richy
+# url: https://github.com/PanoramicRum/nimiq-icons-discourse 
 
 
 register_svg_icon "nq-icon-close"

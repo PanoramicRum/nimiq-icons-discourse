@@ -1,12 +1,7 @@
 {
-  "name": "discourse",
+  "name": "nimicons",
   "version": "1.0.0",
-  "repository": "git@github.com:discourse/discourse-spoiler-alert.git",
-  "author": "Discourse",
+  "repository": "git@github.com:PanoramicRum/nimiq-icons-discourse",
+  "author": "Richy",
   "license": "MIT",
-  "devDependencies": {
-    "babel-eslint": "^8.2",
-    "eslint": "^4.19",
-    "prettier": "1.14.3"
-  }
 }

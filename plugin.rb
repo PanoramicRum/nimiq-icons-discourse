@@ -4,23 +4,31 @@
 # authors: Robin Ward, Regis Hanol
 # url: https://github.com/discourse/discourse-spoiler-alert
 
-enabled_site_setting :spoiler_enabled
 
-register_asset "javascripts/spoiler.js"
-register_asset "stylesheets/discourse_spoiler_alert.css"
+register_svg_icon "nq-icon-close"
+register_svg_icon "nq-icon-up"
+register_svg_icon "nq-icon-down"
+register_svg_icon "nq-icon-menu"
+register_svg_icon "nq-icon-search"
+register_svg_icon "nq-icon-unordered-list"
+register_svg_icon "nq-icon-options-vertical"
+register_svg_icon "nq-icon-wrench"
+register_svg_icon "nq-icon-share"
+register_svg_icon "nq-icon-flag"
+register_svg_icon "nq-icon-invite"
+register_svg_icon "nq-icon-forward"
+register_svg_icon "nq-icon-reply"
+register_svg_icon "nq-icon-options-horizontal"
+register_svg_icon "nq-icon-edit"
+register_svg_icon "nq-icon-trash"
+register_svg_icon "nq-icon-quote-message"
+register_svg_icon "nq-icon-bold"
+register_svg_icon "nq-icon-italic"
+register_svg_icon "nq-icon-link"
+register_svg_icon "nq-icon-code"
+register_svg_icon "nq-icon-image"
+register_svg_icon "nq-icon-ordered-list"
+register_svg_icon "nq-icon-smiley"
+register_svg_icon "nq-icon-settings"
+register_svg_icon "nq-icon-expand"
 
-after_initialize do
-
-  # black out spoilers in emails
-  Email::Styles.register_plugin_style do |fragment|
-    fragment.css(".spoiler").each do |spoiler|
-      spoiler["style"] = "color: #000; background-color: #000;"
-    end
-  end
-
-  # remove spoilers in embedded comments
-  on(:reduce_cooked) do |fragment|
-    fragment.css(".spoiler").remove
-  end
-
-end
